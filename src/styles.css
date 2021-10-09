@@ -1,0 +1,23 @@
+.App {
+    font-family: sans-serif;
+    text-align: center;
+  }
+  
+  .user-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .user-list-item {
+    width: 200px;
+    height: 100px;
+    border: 1px solid;
+    margin: 10px;
+  }
+*{
+  box-sizing: border-box;
+  margin: 0;
+}
+html{
+  height: 100%;
+}
