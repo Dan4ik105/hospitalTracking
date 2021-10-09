@@ -7,7 +7,9 @@ import WorklogListItem from './worklog-lost-item/worklog-list-item';
 const WorklogList = ({worklog, employeesId})=>{
 
     const elements = worklog.map((item)=>{
-        return(
+    
+        if(item.employee_id === +employeesId){
+            return(
                 <tr key={item.id}>
                     <WorklogListItem
                         data={item}
@@ -15,18 +17,8 @@ const WorklogList = ({worklog, employeesId})=>{
                 </tr>
                 
             )
-
-        // if(item.employee_id === +employeesId){
-        //     return(
-        //         <tr key={item.id}>
-        //             <WorklogListItem
-        //                 data={item}
-        //             />
-        //         </tr>
-                
-        //     )
-        // }
-        // return null
+        }
+        return null
 	})
 
     return(
