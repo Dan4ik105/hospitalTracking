@@ -38,6 +38,7 @@ export default class WorklofPage extends Component{
               if(item.id === +employeesId){
                 return `${item.lastName} ${item.firstName} ${item.middleName}`
               }
+              return null
             })
 
         if (loading) {
