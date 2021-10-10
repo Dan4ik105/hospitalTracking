@@ -46,7 +46,10 @@ export default class EmployeesPage extends Component{
           </div>;
         }
         else{
-        return <EmployeesList employees={data}/>
+        return <>
+              <header>Список сотрудников</header> 
+              <EmployeesList employees={data}/>
+            </>
         }
     }
 
